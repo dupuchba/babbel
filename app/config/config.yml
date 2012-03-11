@@ -58,3 +58,11 @@ swiftmailer:
 jms_security_extra:
     secure_controllers:  true
     secure_all_services: false
+
+bazinga_faker:
+    orm: doctrine
+    entities:
+        Babbel\UserBundle\Entity\Post:
+            number: 10
+            custom_formatters:
+                Isbn:   { method: word }
