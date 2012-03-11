@@ -63,4 +63,4 @@ bazinga_faker:
     orm: doctrine
     entities:
         Babbel\UserBundle\Entity\Post:
-            number: 10                
+            number: 10
