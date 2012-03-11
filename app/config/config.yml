@@ -63,6 +63,4 @@ bazinga_faker:
     orm: doctrine
     entities:
         Babbel\UserBundle\Entity\Post:
-            number: 10
-            custom_formatters:
-                Isbn:   { method: word }
+            number: 10                
