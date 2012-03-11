@@ -83,11 +83,25 @@
     $('#fat-btn')
       .click(function () {
         var btn = $(this)
-        btn.button('loading')
-        setTimeout(function () {
-          btn.button('reset')
-        }, 3000)
+        btn.button('loading');
+        $.ajax({
+                type: "GET",
+                url: Routing.generate('post'),
+                cache: false,
+                success: function(){                    
+                    btn.button('reset');
+                }
+            });
       })
+    
+//    $('#fat-btn')
+//      .click(function () {
+//        var btn = $(this)
+//        btn.button('loading')
+//        setTimeout(function () {
+//          btn.button('reset')
+//        }, 3000)
+//      })
 
     // carousel demo
     $('#myCarousel').carousel()

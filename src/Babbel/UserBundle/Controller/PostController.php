@@ -19,7 +19,7 @@ class PostController extends Controller
     /**
      * Lists all Post entities.
      *
-     * @Route("/", name="post")
+     * @Route("/", name="post", options={"expose"=true})
      * @Template()
      */
     public function indexAction()
