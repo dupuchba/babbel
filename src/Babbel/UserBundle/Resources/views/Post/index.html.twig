@@ -3,7 +3,9 @@
 {% block postSpan4%}
 
     {% for entity in entities %}
+        
         {% include 'BabbelUserBundle:Post:show.html.twig' with {'entity': entity} %}
+
     {% endfor %}
 
 {% endblock %}
